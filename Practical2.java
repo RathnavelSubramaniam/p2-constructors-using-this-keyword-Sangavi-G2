@@ -3,31 +3,26 @@ class Product {
     String productName;
     double price;
     static int count = 0;
-
     Product() {
         this.productId = 0;
         this.productName = null;
         this.price = 0.0;
     }
-
     Product(int productId, String productName, double price) {
         this.productId = productId;
         this.productName = productName;
         this.price = price;
         count++;
     }
-
     double discount(double discountPercentage) {
         return ((100 - discountPercentage) / 100) * this.price;
     }
-
     void displayProductInfo() {
         System.out.println("Product Id : " + productId);
         System.out.println("Product Name : " + productName);
         System.out.println("Product Price : " + price);
     }
 }
-
 public class Practical2 {
     public static void main(String[] args) {
         Product product1 = new Product(101, "Laptop", 999.99);
