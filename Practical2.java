@@ -39,7 +39,7 @@ public class Practical2 {
         product3.displayProductInfo();
 
         double discountedPrice = product1.discount(10);
-        System.out.println("Discounted Price : "+discountedPrice);
+        System.out.println("Discounted Price: "+discountedPrice);
         System.out.println(Product.count);
     }
 }
